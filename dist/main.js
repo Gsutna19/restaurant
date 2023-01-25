@@ -1,0 +1,1 @@
+(()=>{"use strict";const e=document.createElement("h1"),t=document.createElement("p");e.textContent="Welcome to Reastaurant!",t.textContent="The restaurant is great! 10/10 would eat here again.",document.body.appendChild(function(){const n=document.getElementById("content");return n.appendChild(e),n.appendChild(t),n}())})();
