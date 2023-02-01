@@ -1,18 +1,35 @@
-import {heading, par, ul} from './page-load.js';
+import {heading, head2, head3, par, par2, par3, ul} from './page-load.js';
 import './style.css';
 import Burger from './burger.jpg';
+import Neon from './neonburger.jpg';
+import Icecream from './icecream.jpg';
 
 function component() {
     const element = document.getElementById('content');
 
-    element.appendChild(ul);
+    document.body.appendChild(ul);
     element.appendChild(heading);
-    element.appendChild(par);
-
+    
     const myBurger = new Image();
     myBurger.src = Burger;
-
+    
     element.appendChild(myBurger);
+    element.appendChild(par);
+
+    const myNeon = new Image();
+    myNeon.src = Neon;
+
+    element.appendChild(head2);
+    element.appendChild(myNeon);
+    element.appendChild(par2);
+
+    const myIcecream = new Image();
+    myIcecream.src = Icecream;
+
+    element.appendChild(head3);
+    element.appendChild(myIcecream);
+    element.appendChild(par3);
+
 
     return element;
 }

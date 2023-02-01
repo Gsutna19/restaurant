@@ -7,23 +7,50 @@
     --sec-link: #4D412C;
 }
 
-h1 {
-    color: blue;
+* {
+    margin: 0;
 }
 
-.content {
-    background: url('./burger.jpg');
+body {
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    background: url('./wood.jpg')
+}
+
+h1, h2, p {
+    color: var(--light-txt);
+    padding: 8px 0;
+}
+
+#content {
+    background-color: var(--dark-bg);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+    max-width: 632px;
+    border-radius: 30px;
+    padding: 16px 0;
 }
 
 .header {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: var(--light-bg);
-    color: var(--dark-txt);
+    background-color: var(--dark-bg);
+    color: var(--light-txt);
     list-style-type: none;
+    box-shadow: 0 1px 4px black;
+    width: 96vw;
+    z-index: 99;
 }
 
 li {
     padding: 16px;
+}
+
+img {
+    max-width: 100%;
 }
