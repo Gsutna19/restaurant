@@ -1,0 +1,29 @@
+:root {
+    --light-bg: #CAD8E5;
+    --dark-bg: #34404D;
+    --light-txt: #998C77;
+    --dark-txt: #34404D;
+    --prim-link: #778899;
+    --sec-link: #4D412C;
+}
+
+h1 {
+    color: blue;
+}
+
+.content {
+    background: url('./burger.jpg');
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--light-bg);
+    color: var(--dark-txt);
+    list-style-type: none;
+}
+
+li {
+    padding: 16px;
+}
