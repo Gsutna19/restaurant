@@ -1,4 +1,4 @@
-export { heading, head2, head3, par, par2, par3, ul, ul2 }
+export { aHome, aMenu, aContact, heading, head2, head3, par, par2, par3, ul, ul2 }
 
 const heading = document.createElement('h1');
 const head2 = document.createElement('h2');
@@ -14,15 +14,34 @@ const ul2 = document.createElement('ul');
 const li4 = document.createElement('li');
 const li5 = document.createElement('li');
 
+const aHome = document.createElement('a');
+const aMenu = document.createElement('a');
+const aContact = document.createElement('a');
+
 ul.classList.add('header');
 ul2.classList.add('header');
 
-li.textContent = 'Home';
-li2.textContent = 'Menu';
-li3.textContent = 'Contact Us';
+aHome.textContent = 'Home';
+aMenu.textContent = 'Menu';
+aContact.textContent = 'Contact Us';
+
+aHome.title = "Home page for Restaurant";
+aMenu.title = "Food menu for Restaurant";
+aContact.title = "Contact Us info";
+
+aHome.href = "../dist/index.html";
+aMenu.href = "#";
+aContact.href = "#";
+
+li.appendChild(aHome);
+li2.appendChild(aMenu);
+li3.appendChild(aContact);
 
 li4.textContent = 'Gsutna19 2023';
 li5.textContent = 'Images found on Unsplash';
+
+li4.classList.add('foot');
+li5.classList.add('foot');
 
 ul.appendChild(li);
 ul.appendChild(li2);

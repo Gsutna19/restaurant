@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Lobster+Two&display=swap');
 
 :root {
-    --light-bg: #CAD8E5;
+    --light-bg: #998C77;
     --dark-bg: #34404D;
     --light-txt: #998C77;
     --dark-txt: #34404D;
@@ -47,6 +47,16 @@ p {
     margin: 8px 0;
 }
 
+a {
+    text-decoration: none;
+    color: var(--light-txt);
+}
+
+li:hover, li:hover a{
+    color: var(--dark-txt);
+    background-color: var(--light-bg);
+}
+
 .header {
     display: flex;
     align-items: center;
@@ -61,6 +71,8 @@ p {
 }
 
 li {
+    border-radius: 16px;
+    /* border: 2px solid red; */
     padding: 16px;
     font-family: 'Lobster Two', cursive;
     /* font-size: 1.5rem; */
@@ -73,4 +85,10 @@ li, p {
 
 img {
     max-width: 100%;
+}
+
+.foot:hover, .foot:hover a {
+    background-color: var(--dark-bg);
+    text-decoration: none;
+    color: var(--light-txt);
 }
