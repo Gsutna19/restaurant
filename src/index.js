@@ -1,4 +1,4 @@
-import {heading, head2, head3, par, par2, par3, ul} from './page-load.js';
+import {heading, head2, head3, par, par2, par3, ul, ul2} from './page-load.js';
 import './style.css';
 import Burger from './burger.jpg';
 import Neon from './neonburger.jpg';
@@ -30,8 +30,10 @@ function component() {
     element.appendChild(myIcecream);
     element.appendChild(par3);
 
-
+    
+    
     return element;
 }
 document.body.appendChild(component());
+document.body.appendChild(ul2);
 // console.log('Importing content form page-load')
