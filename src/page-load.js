@@ -1,4 +1,4 @@
-export { aHome, aMenu, aContact, heading, head2, head3, head4, par, par2, par3, ul, ul2 }
+export { aHome, aMenu, aContact, heading, head2, head3, head4, par, par2, par3, ul, ul2, li, li2, li3 }
 
 const heading = document.createElement('h1');
 const head2 = document.createElement('h2');

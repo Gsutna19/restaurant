@@ -35,6 +35,7 @@ h1, h2, p {
     padding: 8px 0;
 }
 
+
 p {
     padding: 8px 40px; 
 }
@@ -51,16 +52,6 @@ p {
     margin: 8px 0;
 }
 
-a {
-    text-decoration: none;
-    color: var(--light-txt);
-}
-
-li:hover, li:hover a{
-    color: var(--dark-txt);
-    background-color: var(--light-bg);
-}
-
 .header {
     display: flex;
     align-items: center;
@@ -73,6 +64,17 @@ li:hover, li:hover a{
     width: 99vw;
     z-index: 99;
 }
+
+a {
+    text-decoration: none;
+    color: var(--light-txt);
+}
+
+li:hover, li:hover a, .current, .current a{
+    color: var(--dark-txt);
+    background-color: var(--light-bg);
+}
+
 
 li {
     border-radius: 16px;
