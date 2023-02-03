@@ -18,12 +18,16 @@ body {
     flex-direction: column;
     justify-items: center;
     align-items: center;
-    background: url('./wood.jpg')
+    background: url('./wood.jpg');
 }
 
 h1, h2 {
     font-family: 'Lobster Two', cursive;
     font-size: 2.25rem;
+}
+
+h1 {
+    margin-bottom: 32px;
 }
 
 h1, h2, p {

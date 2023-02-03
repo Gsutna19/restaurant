@@ -4,6 +4,7 @@ import Burger from './burger.jpg';
 import Neon from './neonburger.jpg';
 import Icecream from './icecream.jpg';
 import menuDisplay from './menu.js';
+import contactPage from './contact.js';
 
 document.body.appendChild(ul);
 function component() {
@@ -31,13 +32,31 @@ function component() {
     element.appendChild(myIcecream);
     element.appendChild(par3);
 
-    // document.body.appendChild(element);
-
     return element;
 }
-// aHome.onclick = component();
-// See project instructions for functionality
-aHome.onclick = document.body.appendChild(component());
-aMenu.onclick = menuDisplay;
 
-document.body.appendChild(ul2);
+let homeEl = component();
+let menuEl = menuDisplay();
+let contactEl = contactPage();
+
+aHome.onclick = function() {
+    homeEl.remove();
+    menuEl.remove();
+    contactEl.remove();
+    document.body.appendChild(homeEl);
+    document.body.appendChild(ul2);
+}();
+aMenu.onclick = function() {
+    homeEl.remove();
+    menuEl.remove();
+    contactEl.remove();
+    document.body.appendChild(menuEl);
+    document.body.appendChild(ul2);
+}
+aContact.onclick = function() {
+    homeEl.remove();
+    menuEl.remove();
+    contactEl.remove();
+    document.body.appendChild(contactEl);
+    document.body.appendChild(ul2);
+}
