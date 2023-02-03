@@ -38,7 +38,7 @@ li.appendChild(aHome);
 li2.appendChild(aMenu);
 li3.appendChild(aContact);
 
-li4.textContent = 'Gsutna19 2023';
+li4.innerHTML = 'Gsutna19 &copy 2023';
 li5.textContent = 'Images found on Unsplash';
 
 li4.classList.add('foot');

@@ -38,6 +38,11 @@ function component() {
 let homeEl = component();
 let menuEl = menuDisplay();
 let contactEl = contactPage();
+let firstLoad = (function() {
+    document.body.appendChild(homeEl);
+    li.classList.add('current');
+    document.body.appendChild(ul2);
+})();
 
 aHome.onclick = function() {
     homeEl.remove();
@@ -48,7 +53,7 @@ aHome.onclick = function() {
     li2.classList.remove('current');
     li3.classList.remove('current');
     document.body.appendChild(ul2);
-}();
+};
 aMenu.onclick = function() {
     homeEl.remove();
     menuEl.remove();
@@ -58,7 +63,7 @@ aMenu.onclick = function() {
     li2.classList.add('current');
     li3.classList.remove('current');
     document.body.appendChild(ul2);
-}
+};
 aContact.onclick = function() {
     homeEl.remove();
     menuEl.remove();
@@ -68,4 +73,4 @@ aContact.onclick = function() {
     li2.classList.remove('current');
     li3.classList.add('current');
     document.body.appendChild(ul2);
-}
+};
