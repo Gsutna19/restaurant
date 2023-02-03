@@ -30,7 +30,7 @@ aHome.title = "Home page for Restaurant";
 aMenu.title = "Food menu for Restaurant";
 aContact.title = "Contact Us info";
 
-aHome.href = "../dist/index.html";
+aHome.href = "#";
 aMenu.href = "#";
 aContact.href = "#";
 // MAke li's the link and not just the text inside.
