@@ -73,6 +73,7 @@ a {
 li:hover, li:hover a, .current, .current a{
     color: var(--dark-txt);
     background-color: var(--light-bg);
+    cursor: pointer;
 }
 
 

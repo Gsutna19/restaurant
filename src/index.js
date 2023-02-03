@@ -44,7 +44,7 @@ let firstLoad = (function() {
     document.body.appendChild(ul2);
 })();
 
-aHome.onclick = function() {
+li.onclick = function() {
     homeEl.remove();
     menuEl.remove();
     contactEl.remove();
@@ -54,7 +54,7 @@ aHome.onclick = function() {
     li3.classList.remove('current');
     document.body.appendChild(ul2);
 };
-aMenu.onclick = function() {
+li2.onclick = function() {
     homeEl.remove();
     menuEl.remove();
     contactEl.remove();
@@ -64,7 +64,7 @@ aMenu.onclick = function() {
     li3.classList.remove('current');
     document.body.appendChild(ul2);
 };
-aContact.onclick = function() {
+li3.onclick = function() {
     homeEl.remove();
     menuEl.remove();
     contactEl.remove();
