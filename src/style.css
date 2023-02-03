@@ -78,10 +78,8 @@ li:hover, li:hover a, .current, .current a{
 
 li {
     border-radius: 16px;
-    /* border: 2px solid red; */
     padding: 16px;
     font-family: 'Lobster Two', cursive;
-    /* font-size: 1.5rem; */
 }
 
 li, p {
