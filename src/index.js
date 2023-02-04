@@ -1,4 +1,4 @@
-import { aHome, aMenu, aContact, heading, head2, head3, par, par2, par3, ul, ul2, li, li2, li3} from './page-load.js';
+import { heading, head2, head3, par, par2, par3, ul, ul2, li, li2, li3} from './page-load.js';
 import './style.css';
 import Burger from './burger.jpg';
 import Neon from './neonburger.jpg';

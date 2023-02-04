@@ -33,7 +33,6 @@ aContact.title = "Contact Us info";
 aHome.href = "#";
 aMenu.href = "#";
 aContact.href = "#";
-// MAke li's the link and not just the text inside.
 li.appendChild(aHome);
 li2.appendChild(aMenu);
 li3.appendChild(aContact);
